@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="es-MX" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ripe | Café de especialidad en Ciudad de México</title>
+<meta name="description" content="Café de especialidad en la Ciudad de México: cereza madura de Chiapas y Veracruz, tostada con calma. Tres barras y tu primer café gratis.">
+<meta name="theme-color" content="#0b0705">
+<!-- DEPLOY STEP: og:url and og:image point at the live address; update every page if the domain changes -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ripe | Café de especialidad en Ciudad de México">
+<meta property="og:description" content="Café de especialidad en la Ciudad de México: cereza madura de Chiapas y Veracruz, tostada con calma. Tres barras y tu primer café gratis.">
+<meta property="og:url" content="https://darkslategrey-locust-750267.hostingersite.com/">
+<meta property="og:image" content="https://darkslategrey-locust-750267.hostingersite.com/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 9c0-3 2-5 5-6' stroke='%23c9a063' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cellipse cx='16' cy='19' rx='10' ry='11' fill='%238e1f2b'/%3E%3Cellipse cx='12.5' cy='15' rx='2.6' ry='3.6' fill='%23ffffff' fill-opacity='.3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+<link rel="stylesheet" href="estilos.css?v=20261030b">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="env" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grain"></div></div>
+
+<header class="top is-fixed" id="topbar">
+  <div class="chrome" aria-hidden="true">
+    <div class="dots"><i></i><i></i><i></i></div>
+    <div class="url"><svg viewBox="0 0 10 12"><rect x="1" y="5" width="8" height="6.4" rx="1.2" fill="currentColor"/><path d="M2.8 5V3.6a2.2 2.2 0 0 1 4.4 0V5" stroke="currentColor" stroke-width="1.2" fill="none"/></svg><span>https://www.<b>ripecafe.mx</b></span></div>
+    <div></div>
+  </div>
+  <div class="nav">
+    <a class="brand" href="index.html" aria-label="Ripe, inicio">
+      <span class="brand-word">Ripe</span>
+      <svg class="brand-dot" viewBox="0 0 18 22" aria-hidden="true"><path d="M9 6c0-2.6 1.6-4.4 4.4-5" stroke="#c9a063" stroke-width="1.6" fill="none" stroke-linecap="round"/><ellipse cx="9" cy="14" rx="7.4" ry="7.8" fill="#8e1f2b"/><ellipse cx="6.6" cy="11.2" rx="1.8" ry="2.6" fill="#fff" fill-opacity=".28"/></svg>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+        <li><a href="nuestra-historia.html">Nuestra historia</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="bebidas.html">Bebidas</a></li>
+        <li><a href="postres.html">Postres</a></li>
+        <li><a href="sucursales.html">Sucursales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Abrir navegación"><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="drawer" id="drawer" aria-label="Navegación móvil">
+  <button class="close" id="drawerClose" type="button" aria-label="Cerrar navegación"></button>
+  <a href="index.html" class="active" aria-current="page">Inicio</a>
+  <a href="nuestra-historia.html">Nuestra historia</a>
+  <a href="menu.html">Menú</a>
+  <a href="bebidas.html">Bebidas</a>
+  <a href="postres.html">Postres</a>
+  <a href="sucursales.html">Sucursales</a>
+  <a href="contacto.html">Contacto</a>
+  <p class="url-m">www.ripecafe.mx</p>
+</nav>
+
+<main id="main" tabindex="-1">
+
+<section class="hero" id="top" aria-label="Ripe, barra de café">
+  <div class="stage" id="stage">
+    <div class="media" aria-hidden="true">
+      <div class="media-move" id="mediaMove">
+        <div class="poster" id="poster"></div>
+        <div class="poster-end" id="posterEnd"></div>
+        <video id="hero" preload="none" muted playsinline disablepictureinpicture aria-hidden="true" tabindex="-1"></video>
+        <div class="still" id="still"></div>
+        <canvas class="steam" id="steam"></canvas>
+      </div>
+      <div class="veil" id="veil"></div>
+      <div class="scrim"></div>
+    </div>
+
+    <div class="splash" id="splash">
+      <h1 class="splash-name">Ripe<span class="sr">, café de especialidad cortado maduro en la Ciudad de México</span></h1>
+      <p class="splash-sub" aria-hidden="true">Barra de café · Ciudad de México</p>
+    </div>
+
+    <div class="band band-pull" data-range="0.09,0.23" data-spread="0.5">
+      <p class="chip">Ripe · Café de especialidad</p>
+      <h2 class="pull-h" data-split>La extracción no miente.</h2>
+      <p class="pull-sub">Desliza para ver la nuestra.</p>
+    </div>
+
+    <div class="band band-right" data-range="0.27,0.41" data-spread="0.5">
+      <h2 class="pull-h" data-split>Tostado el martes. Servido hoy.</h2>
+    </div>
+
+    <div class="band band-top fx-blur" data-range="0.46,0.645" data-spread="0.62">
+      <h2 class="best-h" data-split>Bébelo en su punto.</h2>
+    </div>
+
+    <div class="band band-notes" data-range="0.665,0.745" data-spread="0.56">
+      <p class="tag">Notas de cata</p>
+      <h2 class="notes">
+        <span class="sr">Notas de cata: </span>
+        <span class="line"><span data-split>cereza oscura</span><i class="slash" aria-hidden="true">/</i></span>
+        <span class="line"><span data-split>cacao</span><i class="slash" aria-hidden="true">/</i></span>
+        <span class="line"><span data-split>humo</span></span>
+      </h2>
+      <p class="sub" data-split>Mientras humea, ya huele a cacao y a fruta.</p>
+      <div class="static-cta"><a class="btn" href="#cup">Tu primer café gratis</a></div>
+    </div>
+
+    <div class="band band-beat fx-drop" data-range="0.765,0.825" data-spread="0.5">
+      <p class="tag">01 · Origen</p>
+      <h2 class="beat-h" data-split>Cada gota empezó como una cereza roja.</h2>
+      <p class="beat-sub">Cortada a mano en Chiapas y Veracruz, entre 1,300 y 1,800 metros de altura.</p>
+    </div>
+
+    <div class="band band-beat fx-bloom" data-range="0.84,0.89" data-spread="0.5">
+      <p class="tag">02 · Tueste</p>
+      <h2 class="beat-h" data-split>Tostada con calma, en lotes de 12 kg.</h2>
+      <p class="beat-sub">Lo justo para que quede dulce, con un final apenas ahumado.</p>
+    </div>
+
+    <div class="band band-beat fx-punch" data-range="0.905,0.95" data-spread="0.46">
+      <p class="tag">03 · Extracción</p>
+      <h2 class="beat-h" data-split>93 °C. 27 segundos. 36 gramos.</h2>
+      <p class="beat-sub">Medimos cada taza para que la de mañana sepa igual que la de hoy.</p>
+    </div>
+
+    <div class="band band-settle" data-range="0.96,1" data-last data-ramp="0.03" data-spread="0.42">
+      <p class="tag">Ripe · Barra de café</p>
+      <h2 class="settle-h" data-split>Prueba la fruta.</h2>
+      <p class="settle-sub">Café de Chiapas y Veracruz, cortado maduro y tostado con calma. Pídelo como te guste.</p>
+      <div class="settle-cta"><a class="btn" href="#cup">Tu primer café gratis</a><a class="btn btn-ghost" href="menu.html">Ver el menú</a></div>
+      <a class="rating-link" href="#resenas"><span class="stars" aria-hidden="true">★★★★★</span><span>4.9 · 1,248 reseñas</span></a>
+    </div>
+
+    <div class="cue" id="cue" aria-hidden="true">
+      <svg class="ring" id="ring" viewBox="0 0 48 48"><circle class="ring-bg" cx="24" cy="24" r="20"/><circle class="ring-fg" cx="24" cy="24" r="20"/></svg>
+      <i class="chev"></i>
+      <span>Desliza</span>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" id="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span>cereza oscura</span><span>cacao</span><span>humo</span><span>Chiapas</span><span>Veracruz</span><span>cortado a mano</span><span>tostado con calma</span><span>servido al momento</span>
+    <span>cereza oscura</span><span>cacao</span><span>humo</span><span>Chiapas</span><span>Veracruz</span><span>cortado a mano</span><span>tostado con calma</span><span>servido al momento</span>
+  </div>
+</div>
+
+<section class="sec explore" id="explora">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="kicker">Explora</p>
+      <h2 class="h2">Todo Ripe, a un clic.</h2>
+    </div>
+    <div class="method-grid reveal">
+      <a class="step" href="nuestra-historia.html"><div class="step-in">
+        <figure><img src="assets/explora-grano.jpg" alt="Un grano de café tostado sobre una superficie oscura, iluminado como en estudio." width="900" height="1125" loading="lazy" decoding="async"></figure>
+        <span class="step-num">Nuestra historia</span>
+        <h3>De la finca a la taza.</h3>
+        <p>Cómo llegamos a un café que sabe a fruta.</p>
+      </div></a>
+      <a class="step" href="menu.html"><div class="step-in">
+        <figure><img src="assets/metodo-3.jpg" alt="Espresso cayendo dentro de una taza blanca." width="858" height="1072" loading="lazy" decoding="async"></figure>
+        <span class="step-num">Menú</span>
+        <h3>Diez cafés.</h3>
+        <p>Del espresso al V60, con bebidas frías y pan dulce.</p>
+      </div></a>
+      <a class="step" href="sucursales.html"><div class="step-in">
+        <figure><img src="assets/loc-roma.jpg" alt="La barra de madera de Ripe Roma Norte bajo lámparas cálidas." width="900" height="604" loading="lazy" decoding="async"></figure>
+        <span class="step-num">Sucursales</span>
+        <h3>Tres barras.</h3>
+        <p>Roma Norte, Condesa y Coyoacán, con horario en vivo.</p>
+      </div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec rules" id="reglas">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="kicker">La casa</p>
+      <h2 class="h2">Reglas de la casa.</h2>
+    </div>
+    <ol class="rules-grid reveal">
+      <li class="rule-item"><p class="rule-n" aria-hidden="true">01</p><h3>Cero pretensiones.</h3><p>¿Quieres un latte de caramelo? Pídelo. Te hacemos el mejor que hayas probado.</p></li>
+      <li class="rule-item"><p class="rule-n" aria-hidden="true">02</p><h3>Nos aprendemos tu pedido.</h3><p>Ven tres veces y lo empezamos a preparar en cuanto entres.</p></li>
+      <li class="rule-item"><p class="rule-n" aria-hidden="true">03</p><h3>Quédate lo que quieras.</h3><p>Mesas grandes, sillas cómodas y enchufes en cada pared.</p></li>
+      <li class="rule-item"><p class="rule-n" aria-hidden="true">04</p><h3>¿No te encantó? Lo hacemos de nuevo.</h3><p>Gratis, sin preguntas, siempre.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec hours" id="horarios">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="kicker">Horarios</p>
+      <h2 class="h2">Abiertos los siete días.</h2>
+      <p class="lede">Tres barras, el mismo café. Elige la que te quede más cerca.</p>
+    </div>
+    <div class="table-wrap table-responsive reveal">
+      <table class="table table-striped align-middle mb-0 hours-table">
+        <caption class="sr">Horario de las tres barras de Ripe</caption>
+        <thead><tr><th scope="col">Barra</th><th scope="col"><span class="d-none d-sm-inline">Lunes a viernes</span><span class="d-sm-none">Lun a vie</span></th><th scope="col"><span class="d-none d-sm-inline">Sábado y domingo</span><span class="d-sm-none">Sáb y dom</span></th></tr></thead>
+        <tbody>
+          <tr data-open="7-21,7-21,7-21,7-21,7-21,8-20,8-20" data-short><th scope="row"><a href="sucursales.html#roma">Roma Norte</a><span class="loc-status badge rounded-pill text-wrap" aria-live="polite"></span></th><td>7:00 a 21:00</td><td>8:00 a 20:00</td></tr>
+          <tr data-open="7-21,7-21,7-21,7-21,7-21,8-20,8-20" data-short><th scope="row"><a href="sucursales.html#condesa">Condesa</a><span class="loc-status badge rounded-pill text-wrap" aria-live="polite"></span></th><td>7:00 a 21:00</td><td>8:00 a 20:00</td></tr>
+          <tr data-open="8-20,8-20,8-20,8-20,8-20,8-20,8-20" data-short><th scope="row"><a href="sucursales.html#coyoacan">Coyoacán</a><span class="loc-status badge rounded-pill text-wrap" aria-live="polite"></span></th><td>8:00 a 20:00</td><td>8:00 a 20:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec reviews" id="resenas">
+  <div class="wrap">
+    <div class="rev-head reveal">
+      <div>
+        <p class="kicker">Reseñas</p>
+        <h2 class="h2">Lo que dicen en la barra.</h2>
+      </div>
+      <div class="rev-score">
+        <p class="score">4.9</p>
+        <div>
+          <p class="stars" aria-label="4.9 de 5 estrellas">★★★★★</p>
+          <p class="score-sub">1,248 reseñas en nuestras tres barras</p>
+        </div>
+      </div>
+    </div>
+    <p class="rev-note">Reseñas de ejemplo para esta demostración</p>
+    <div class="rev-grid reveal">
+      <div class="rev-col">
+        <article class="rev">
+          <figure><button type="button" class="rev-zoom" data-bs-toggle="modal" data-bs-target="#revModal" aria-label="Ver en grande la foto del cortado"><img src="assets/rev-cortado.jpg" alt="Un cortado en vaso de vidrio sobre un plato blanco, en una mesa oscura." width="900" height="1125" loading="lazy" decoding="async"></button><figcaption>Cortado</figcaption></figure>
+          <div class="rev-body">
+            <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote>Pedí un cortado y sabía a chocolate con cereza. Nada quemado. Ya voy tres veces esta semana y ya se saben mi pedido.</blockquote>
+            <p class="rev-meta"><span><b>Mariana R.</b> · hace 2 días</span><span>Roma Norte</span></p>
+          </div>
+        </article>
+        <article class="rev">
+          <div class="rev-body">
+            <p class="stars" aria-label="4 de 5 estrellas">★★★★<span class="off">★</span></p>
+            <blockquote>El espresso es otra cosa, dulce y corto. Le bajo una estrella porque a las 9 de la mañana hay fila, pero vale la pena.</blockquote>
+            <p class="rev-meta"><span><b>Andrés G.</b> · hace 1 semana</span><span>Roma Norte</span></p>
+          </div>
+        </article>
+      </div>
+      <div class="rev-col">
+        <article class="rev">
+          <div class="rev-body">
+            <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote>Pedí horchata con un shot de espresso, que ni está en el menú, y me la prepararon sin problema. Detallazo.</blockquote>
+            <p class="rev-meta"><span><b>Valeria T.</b> · hace 4 días</span><span>Condesa</span></p>
+          </div>
+        </article>
+        <article class="rev">
+          <figure><button type="button" class="rev-zoom" data-bs-toggle="modal" data-bs-target="#revModal" aria-label="Ver en grande la foto del latte helado"><img src="assets/rev-latte-helado.jpg" alt="Un latte helado con hielo en un vaso de doble pared." width="900" height="1125" loading="lazy" decoding="async"></button><figcaption>Latte helado</figcaption></figure>
+          <div class="rev-body">
+            <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote>La terraza en la tarde es lo mejor. Pedí un latte de caramelo sin pena y nadie me vio feo. Así sí.</blockquote>
+            <p class="rev-meta"><span><b>Diego M.</b> · hace 3 días</span><span>Condesa</span></p>
+          </div>
+        </article>
+      </div>
+      <div class="rev-col">
+        <article class="rev">
+          <figure><button type="button" class="rev-zoom" data-bs-toggle="modal" data-bs-target="#revModal" aria-label="Ver en grande la foto del rol de canela"><img src="assets/rev-rol-canela.jpg" alt="Un rol de canela glaseado junto a una taza de café negro." width="900" height="1125" loading="lazy" decoding="async"></button><figcaption>Rol de canela</figcaption></figure>
+          <div class="rev-body">
+            <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote>Vine a trabajar con la laptop y me quedé cuatro horas. Enchufes en todas las mesas y el rol de canela, increíble.</blockquote>
+            <p class="rev-meta"><span><b>Sofía L.</b> · hace 5 días</span><span>Coyoacán</span></p>
+          </div>
+        </article>
+        <article class="rev">
+          <div class="rev-body">
+            <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+            <blockquote>Traje a mi mamá, que solo toma café de olla, y salió fan del cortado. Eso ya es mucho decir.</blockquote>
+            <p class="rev-meta"><span><b>Luis P.</b> · hace 2 semanas</span><span>Coyoacán</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="preguntas">
+  <div class="wrap faq-grid">
+    <div class="faq-side reveal">
+      <p class="kicker">Preguntas</p>
+      <h2 class="h2">Lo que la gente pregunta.</h2>
+    </div>
+    <div class="faq-list accordion accordion-flush reveal" id="faqAcc">
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">¿Es uno de esos cafés fresas?</button></h3>
+        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body ans">Nos importa mucho el café y nada ser fresas. Pide lo que se te antoje.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">¿Va a saber agrio? No me gustan los tuestes claros.</button></h3>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body ans">No. Tostamos al punto dulce. Piensa en chocolate y fruta madura, no en limón.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">¿Por qué cuesta un poco más?</button></h3>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body ans">Cortar cereza madura cuesta más trabajo, y les pagamos bien a los productores. Aun así, casi todo cuesta menos de $80.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">¿Puedo llevar mi laptop?</button></h3>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body ans">Claro. Quédate lo que quieras. La mesa larga junto a la ventana es para trabajar.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">¿Dónde están?</button></h3>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body ans">Tenemos tres barras en la Ciudad de México: Roma Norte, Condesa y Coyoacán. En <a href="sucursales.html">Sucursales</a> están las direcciones y los horarios.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec cup" id="cup">
+  <div class="wrap">
+    <div class="cta-card">
+      <div class="motes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="reveal">
+        <p class="kicker">Para tu primera visita</p>
+        <h2 class="h2">Tu primer café va por nosotros.</h2>
+        <p class="lede">Déjanos tu nombre y tu correo, y te damos al instante un código para un café gratis en cualquiera de nuestras barras.</p>
+      </div>
+      <!-- Formspree: cada cupón llega al correo de la cuenta de Formspree, con el código que se le dio al cliente -->
+      <form class="form needs-validation" id="cupForm" action="https://formspree.io/f/mgaazdon" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nuevo cupón de primer café · Ripe">
+        <input type="hidden" name="codigo" value="">
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field"><label for="f-nombre">Tu nombre</label><input class="form-control" id="f-nombre" name="nombre" type="text" autocomplete="given-name" placeholder="Ana" required><div class="invalid-feedback">Escribe tu nombre para apartar tu café.</div></div>
+        <div class="field"><label for="f-correo">Correo</label><input class="form-control" id="f-correo" name="email" type="email" autocomplete="email" inputmode="email" placeholder="tu@correo.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,}" required><div class="invalid-feedback">Revisa tu correo. Debe verse así: ana@correo.com</div></div>
+        <button class="btn" type="submit">Aparta mi café gratis</button>
+        <p class="micro">Tu código aparece aquí mismo. Sin spam.</p>
+        <p class="form-error" role="alert" hidden>No pudimos apartar tu café. Revisa tu conexión e inténtalo de nuevo, o escríbenos por WhatsApp al 55 6454 5381.</p>
+      </form>
+      <p class="ok" id="cupOk" tabindex="-1" role="status" hidden>Listo, <span data-name></span>. Tu primer café te espera.<span class="code-label">Tu código de cupón</span><strong class="code" data-code></strong><button type="button" class="btn btn-ghost code-copy" id="copyCode">Copiar código</button><span class="code-note">Toma captura y muéstralo en cualquiera de nuestras barras.</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="modal fade rev-modal" id="revModal" tabindex="-1" aria-labelledby="revModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="revModalTitle">Reseña</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img class="rev-modal-img" src="assets/rev-cortado.jpg" alt="Foto de la reseña en grande." width="900" height="1125">
+        <div>
+          <p class="stars" aria-hidden="true">★★★★★</p>
+          <blockquote class="rev-modal-quote"></blockquote>
+          <p class="rev-modal-meta"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+  <div class="toast ripe-toast" id="copyToast" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">Código copiado. Muéstralo en la barra.</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+    </div>
+  </div>
+</div>
+
+<a class="btn float-cta is-fixed" id="floatCta" href="#cup">Tu primer café gratis</a>
+<a class="wa-float" id="waFloat" href="https://wa.me/525564545381?text=Hola%2C%20Ripe.%20Quiero%20pedir%20un%20caf%C3%A9%20para%20recoger%20en%20la%20barra.%20%C2%BFQu%C3%A9%20origen%20tienen%20hoy%3F" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp (se abre en una pestaña nueva)"><i class="bi bi-whatsapp" aria-hidden="true"></i><span class="wa-label">¿Dudas? Escríbenos</span></a>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Ripe, inicio"><span class="brand-word">Ripe</span><svg class="brand-dot" viewBox="0 0 18 22" aria-hidden="true"><path d="M9 6c0-2.6 1.6-4.4 4.4-5" stroke="#c9a063" stroke-width="1.6" fill="none" stroke-linecap="round"/><ellipse cx="9" cy="14" rx="7.4" ry="7.8" fill="#8e1f2b"/></svg></a>
+        <p class="foot-tag">El café es una fruta.</p>
+        <p class="foot-social"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (se abre en una pestaña nueva)">Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok (se abre en una pestaña nueva)">TikTok</a></p>
+      </div>
+      <nav class="foot-links" aria-label="Pie de página">
+        <a href="index.html">Inicio</a><a href="nuestra-historia.html">Nuestra historia</a><a href="menu.html">Menú</a><a href="bebidas.html">Bebidas</a><a href="postres.html">Postres</a><a href="sucursales.html">Sucursales</a><a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+    <p class="disclose">Ripe es una marca conceptual creada para una demostración. El café, el menú, las sucursales, las reseñas y las imágenes son ficticios.</p>
+    <p class="copy">© 2026 Ripe</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js?v=20261030b"></script>
+<script>
+/* ===== JavaScript de la página de Inicio (Sesión 20) ===== */
+
+/* 1. Reseñas: al dar clic en una foto se abre en grande, con el comentario del cliente */
+const ventanaResena = document.getElementById('revModal');
+ventanaResena.addEventListener('show.bs.modal', (evento) => {
+  const resena = evento.relatedTarget.closest('.rev');
+  const foto = resena.querySelector('img');
+  const [cliente, sucursal] = resena.querySelectorAll('.rev-meta span');
+  ventanaResena.querySelector('.modal-title').textContent = resena.querySelector('figcaption').textContent;
+  ventanaResena.querySelector('.rev-modal-img').src = foto.src;
+  ventanaResena.querySelector('.rev-modal-img').alt = foto.alt;
+  ventanaResena.querySelector('.rev-modal-quote').textContent = resena.querySelector('blockquote').textContent;
+  ventanaResena.querySelector('.rev-modal-meta').textContent = cliente.textContent + ' · ' + sucursal.textContent;
+});
+
+/* 2. Cupón: revisa el correo mientras el cliente escribe y le avisa si está mal */
+const campoCorreo = document.getElementById('f-correo');
+campoCorreo.addEventListener('input', () => {
+  if (campoCorreo.value.trim() === '') {
+    campoCorreo.classList.remove('is-valid', 'is-invalid');
+    return;
+  }
+  const correoValido = campoCorreo.checkValidity();
+  campoCorreo.classList.toggle('is-valid', correoValido);
+  campoCorreo.classList.toggle('is-invalid', !correoValido);
+});
+
+/* 3. Cupón: copia el código con un clic y confirma con un aviso */
+const botonCopiar = document.getElementById('copyCode');
+const aviso = document.getElementById('copyToast');
+botonCopiar.addEventListener('click', async () => {
+  const codigo = document.querySelector('#cupOk [data-code]').textContent;
+  let copiado = false;
+  try {
+    await navigator.clipboard.writeText(codigo);
+    copiado = true;
+  } catch (error) {
+    /* Plan B: si el navegador bloquea el portapapeles, copiamos seleccionando el texto */
+    const temporal = document.createElement('textarea');
+    temporal.value = codigo;
+    document.body.appendChild(temporal);
+    temporal.select();
+    copiado = document.execCommand('copy');
+    temporal.remove();
+  }
+  aviso.querySelector('.toast-body').textContent = copiado
+    ? 'Código ' + codigo + ' copiado. Muéstralo en la barra.'
+    : 'No se pudo copiar. Toma captura de tu código.';
+  bootstrap.Toast.getOrCreateInstance(aviso).show();
+});
+</script>
+</body>
+</html>
